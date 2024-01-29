@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="responsive-container-block outer-container">
+  <div class="responsive-container-block inner-container">
+    <p class="text-blk section-head-text">
+      Our History Of Meeting
+    </p>
+    <p class="text-blk section-subhead-text">
+      Gestion Ressources Humaines
+    </p>
+    <div class="responsive-container-block">
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+        <div class="team-card">
+          <div class="img-wrapper">
+            <div *ngFor="let reu of treunion">
+          <p class="text-blk name" >
+            {{ reu.nomr}}<br>{{ reu.bureaur }}<br>{{reu.dater}}
+          </p>
+        </div>
+      </div></div>
+    </div>

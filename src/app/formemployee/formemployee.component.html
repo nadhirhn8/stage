@@ -1,0 +1,25 @@
+<app-header></app-header>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  <body>
+    <form >
+      <h1>Ajouter</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="formcontainer">
+      <div class="container" style="width: 60%;">
+        <label for="uname"><strong>Nom</strong></label>
+        <input type="text" placeholder="Enter Nom" name="nom" required [(ngModel)]="emp.nom" >
+        <label for="mail"><strong>Prenom</strong></label>
+        <input type="text" placeholder="Enter Prenom" name="prenom" required [(ngModel)]="emp.prenom">
+        <label for="psw"><strong>Email</strong></label>
+        <input type="text" placeholder="Enter Email" name="email" required [(ngModel)]="emp.email">
+        <label for="psw"><strong>Poste</strong></label>
+        <input type="text" placeholder="Enter Poste" name="poste" required [(ngModel)]="emp.poste">
+        <label for="psw"><strong>Salaire</strong></label>
+        <input type="text" placeholder="Enter Salaire" name="salaire" required [(ngModel)]="emp.salaire">
+      </div><button type="submit" (click)="save()"><strong>Enregister</strong></button>
+      </div></form>

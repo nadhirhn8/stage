@@ -1,0 +1,23 @@
+<app-header></app-header>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  <body>
+    <form >
+      <h1>Ajouter</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="formcontainer">
+      <div class="container" style="width: 70%;">
+        <label for="uname"><strong>NumR</strong></label>
+        <input type="text" placeholder="Enter NumR" name="num" required [(ngModel)]="reu.numr">
+        <label for="mail"><strong>NomR</strong></label>
+        <input type="text" placeholder="Enter NomR" name="nomr" required [(ngModel)]="reu.nomr">
+        <label for="psw"><strong>BureauR</strong></label>
+        <input type="text" placeholder="Enter BureauR" name="bureaur" required [(ngModel)]="reu.bureaur">
+        <label for="psw"><strong>DateR</strong></label>
+        <input type="text" placeholder="Enter DateR" name="date" required [(ngModel)]="reu.dater">
+      </div><button type="submit" (click)="save1()"><strong>Enregister</strong></button>
+      </div></form>

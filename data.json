@@ -1,0 +1,38 @@
+{
+  "liste": [
+    {
+      "id": "40a3",
+      "nom": "hnihina",
+      "prenom": "raed",
+      "email": "raedhnihina@gmail.com",
+      "poste": "développement web frontend ",
+      "salaire": "500$",
+      "y": "homme2.jpg"
+    },
+    {
+      "id": "6726",
+      "nom": "ayoub",
+      "prenom": "khalifa",
+      "email": "ayoubkhalifa@gmail.com",
+      "poste": "informatique",
+      "salaire": "2300$",
+      "y": "homme1.jpg"
+    }
+  ],
+  "reunion": [
+    {
+      "id": "436a",
+      "numr": "1",
+      "nomr": "management reunion ",
+      "bureaur": "bureau3",
+      "dater": "04/02/2024"
+    },
+    {
+      "id": "7fa5",
+      "numr": "5",
+      "nomr": "informatique réunion",
+      "bureaur": "bureau2",
+      "dater": "10/04/2024"
+    }
+  ]
+}

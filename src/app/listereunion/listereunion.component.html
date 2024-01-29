@@ -1,0 +1,22 @@
+<app-header></app-header>
+<p style="margin-left: 620px; color:#4286f4 ; font-family:Verdana, Geneva, Tahoma, sans-serif; " >La Liste Des Réunions</p>
+<div class="col col-md-6 offset-md-2" style="margin-left: 330px;">
+    <table class="table table-hover">
+        <thead>
+            <th style="padding-left: 125px;">NomR</th>
+            <th style="padding-right: 40px;">BureauR</th>
+            <th style="padding-left: 25px;">DateR</th>
+            <th style="padding-left: 55px;">les Action</th>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let reu of reunionList">
+                <td style="padding-left: 80px;">{{reu.nomr}}</td>
+                <td>{{reu.bureaur}}</td>
+                <td >{{reu.dater}}</td>
+                <td style="padding-left: 60px;"><img src="../../assets/editer.jpg" alt="" style="width: 30px;">&nbsp;
+                    <img src="../../assets/delete.png" alt="" style="width: 20px;" (click)="delete(reu.numr)"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

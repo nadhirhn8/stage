@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <img src="../../assets/grh.jpg " style="width: 80px; height: 50px;" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/acc">Accueil<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Employees
+          </a>
+          <ul class="dropdown-menu">
+            <li ><a class="dropdown-item" routerLink="/add" >ajouter un employee</a></li>
+            <li><a class="dropdown-item" routerLink="/liste">liste des employees</a></li>
+            <li><a class="dropdown-item" routerLink="/membre" >employee archivés</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Réunions
+          </a>
+          <ul class="dropdown-menu">
+            <li ><a class="dropdown-item" routerLink="/addr" >ajouter un réunion</a></li>
+            <li><a class="dropdown-item" routerLink="/lister">liste des réunion</a></li>
+            <li><a class="dropdown-item" routerLink="/his" >historique des réunions</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Récrutement
+          </a>
+          <ul class="dropdown-menu">
+            <li ><a class="dropdown-item" routerLink="/recru" >Les Récrutements</a></li>
+            <li><a class="dropdown-item" routerLink="/recemp">Voir Les Employees</a></li>
+          </ul>
+        </li>
+      </ul>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search" >
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  >
+            <button class="btn btn-outline-success" type="submit" >Search</button>
+          </form>
+        </div>
+      </nav>
+      <p style="position: absolute; margin-left: 60%; margin-top: 22px;">Téléphone +216 71 951 248 / Fax +216 71 951 044 </p>
+      <button type="button" class="btn btn-outline-info" style="margin-left:600px;" routerLink="/entrer">Login</button>
+    </div>
+  </nav>
